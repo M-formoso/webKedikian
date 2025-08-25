@@ -1,0 +1,176 @@
+<!-- Servicios Section -->
+<section class="servicios-hero">
+    <div class="servicios-hero-background"></div>
+    <div class="servicios-hero-overlay"></div>
+    <div class="container">
+        <div class="servicios-hero-content">
+            <h1>Servicios</h1>
+            <p>Soluciones integrales en movimiento de tierra, retroexcavación y paisajismo</p>
+        </div>
+    </div>
+</section>
+
+<!-- Breadcrumb -->
+<section class="breadcrumb">
+    <div class="container">
+        <nav class="breadcrumb-nav">
+            <a href="#" onclick="goHome()">Inicio</a>
+            <span class="breadcrumb-separator">></span>
+            <span class="breadcrumb-current">Servicios</span>
+        </nav>
+    </div>
+</section>
+
+<!-- Services Overview -->
+<section class="services-overview">
+    <div class="container">
+        <div class="section-header">
+            <h2>Nuestros <span class="highlight">Servicios</span></h2>
+            <p class="section-subtitle">Ofrecemos servicios especializados en movimiento de tierra con equipos de última generación y un equipo altamente capacitado para garantizar la excelencia en cada proyecto.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Main Services Cards -->
+<section class="main-services-cards">
+    <div class="container">
+        <!-- Perforación y Voladura -->
+        <div class="service-card-large" data-service="perforacion">
+            <div class="service-card-image">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Perforación y Voladura">
+                <div class="service-overlay">
+                    <div class="service-content">
+                        <h3>Perforación y voladura</h3>
+                        <p>Equipos altamente especializados en perforación y voladura prestando apoyo en proyectos de minería y de obra civil.</p>
+                        <button class="service-btn" onclick="showServiceDetail('perforacion')">Ver Más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mantenimiento de Equipos -->
+        <div class="service-card-large" data-service="mantenimiento">
+            <div class="service-card-image">
+                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Mantenimiento de Equipos">
+                <div class="service-overlay">
+                    <div class="service-content">
+                        <h3>Mantenimiento de equipos</h3>
+                        <p>Mantenimiento preventivo y reparación de nuestros equipos, optimizando la disponibilidad y reduciendo el tiempo de inactividad en nuestras operaciones.</p>
+                        <button class="service-btn" onclick="showServiceDetail('mantenimiento')">Ver Más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movimiento de Tierra -->
+        <div class="service-card-large" data-service="movimiento">
+            <div class="service-card-image">
+                <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Movimiento de Tierra">
+                <div class="service-overlay">
+                    <div class="service-content">
+                        <h3>Movimiento de tierra</h3>
+                        <p>Servicios especializados en excavación, nivelación y preparación de terrenos para proyectos de construcción e infraestructura.</p>
+                        <button class="service-btn" onclick="showServiceDetail('movimiento')">Ver Más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paisajismo -->
+        <div class="service-card-large" data-service="paisajismo">
+            <div class="service-card-image">
+                <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Paisajismo">
+                <div class="service-overlay">
+                    <div class="service-content">
+                        <h3>Paisajismo</h3>
+                        <p>Diseño, implementación y mantenimiento de espacios verdes, creando entornos naturales que mejoran la calidad de vida.</p>
+                        <button class="service-btn" onclick="showServiceDetail('paisajismo')">Ver Más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Detail Modal -->
+<div id="service-detail-modal" class="service-modal" style="display: none;">
+    <div class="modal-overlay" onclick="closeServiceDetail()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button onclick="closeServiceDetail()" class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Process Section -->
+<section class="process-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Nuestro <span class="highlight">Proceso</span></h2>
+            <p class="section-subtitle">Trabajamos con una metodología probada que garantiza resultados excepcionales en cada proyecto.</p>
+        </div>
+
+        <div class="process-steps">
+            <div class="process-step" data-step="1">
+                <div class="step-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="step-content">
+                    <h4>Evaluación</h4>
+                    <p>Análisis detallado del sitio y requerimientos del proyecto</p>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="2">
+                <div class="step-icon">
+                    <i class="fas fa-drafting-compass"></i>
+                </div>
+                <div class="step-content">
+                    <h4>Planificación</h4>
+                    <p>Diseño de la estrategia y cronograma de trabajo</p>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="3">
+                <div class="step-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="step-content">
+                    <h4>Ejecución</h4>
+                    <p>Implementación con equipos especializados y personal calificado</p>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="4">
+                <div class="step-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="step-content">
+                    <h4>Entrega</h4>
+                    <p>Control de calidad y entrega final del proyecto</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="services-cta">
+    <div class="cta-background"></div>
+    <div class="cta-overlay"></div>
+    <div class="container">
+        <div class="cta-content">
+            <h2>¿Necesitas un Presupuesto?</h2>
+            <p>Contáctanos para recibir una cotización personalizada para tu proyecto</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary" onclick="loadSection('contacto')">Solicitar Presupuesto</a>
+                <a href="#" class="btn-secondary" onclick="loadSection('proyectos')">Ver Proyectos</a>
+            </div>
+        </div>
+    </div>
+</section>
